@@ -4,16 +4,16 @@ const stations = [
   ['Moose Mountain Community Centre', 45, 'community centre']
 ];
 
-const goodStations = [];
 
 function chooseStations(stations){
+  const goodStations = [];
   for(const station of stations){
     const capacity = station[1];
     if(capacity >= 20){
 
       const type = station[2];
 
-      if(type === "school" || "community centre"){
+      if(type === "school" || type === "community centre"){
         goodStations.push(station[0]);
       }
     }
@@ -22,5 +22,3 @@ function chooseStations(stations){
 }
 
 chooseStations(stations);
-
-// output - (2) ["Bright Lights Elementary", "Moose Mountain Community Centre"]
