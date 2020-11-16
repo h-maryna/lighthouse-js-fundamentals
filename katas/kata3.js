@@ -1,5 +1,5 @@
 var numberOfVowels = function(data) {
-  const vowels = ["a","e","i","o","u"]
+  const vowels = ["a","e","i","o","u"];
   let newArray = [];
 
 for(let i = 0; i < data.length; i++){
